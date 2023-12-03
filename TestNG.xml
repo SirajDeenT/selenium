@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testNG.org/testNG-1.0.dtd" > 
+<suite name ="Test Suite" > 
+<listeners>
+ <listener class-name="testNG.ListenersExample"></listener>
+ </listeners>
+ <test name = "Test cases">
+ <classes>
+ <class name = "testNG. SampleTestCase"></class>
+</classes>
+</test>
+</suite>
+
+
+//<!-- <class name = "testNG.DependiciesManagement"></class>
+//<class name = "testNG.DriveACar"></class>
+//<class name = "testNG.SampleTestCase"></class>-->
+ 
+//<groups>
+ //<run>
+//  <include name ="Moto"></include>
+// <include name="Vivo"></include>
+// </run>
+
+ //7
