@@ -1,0 +1,195 @@
+OTP not sent for new user registration → Twilio flow not working
+
+Facebook login not working 
+
+Instacart flow not working → Request not received for the provider (Flow not checked)
+
+Empty page displayed in heat map 
+refer: Screenshot 
+
+
+
+
+
+Flow issues : 
+
+1. Sinch call not working - User, Provider, and Store
+
+2. Payment Without asking for -> Card or Paylpal to make the  Online Payment (Delivery business type)
+
+3. Scheduled booking not working in Delivery all 
+Refer: Screenshot 
+
+4. The Service Schedule job pop up not appear in the provider app
+
+5. Auto-assign request not received to the provider for both Delivery and Taxi 
+Note: Immediate request functionality not working while clicking the immediate request 
+
+6. The laundry scheduled booking not working
+Screenshot 
+
+7. Can’t able to accept the order in the laundry while the request is received → click the app to accept the request in-store app 
+
+8. User app crashes while tracking the provider in store-related orders 
+
+
+Edit
+
+Delete
+
+
+Ajithkumar M 
+October 12, 2023 at 6:36 PM
+Edited
+
+@Testing Team 
+kindly start testing now 
+wizsonic 
+
+
+
+Incorrect password validation for store while new store registration Screenshot
+
+- fixed
+
+Unable to register a new provider (Refer to below video) - issue not reproduced
+
+Forgot password not working for provider (same as new provider register) - issue not accure
+
+Instacart flow not working → Request not received for provider - kindly check different device
+
+ 
+
+User and provider details not shown properly in store Screenshot
+
+issue not occure
+
+Schedule booking not working - fixed
+
+Manual booking not working (Notification not received for provider) → Manual booked job not assigned to provider - issue not occure
+
+Taxi → Blank popup shown and location not fetched for user - Unable to check taxi flow
+
+Screenshot
+
+issue not occure
+
+Delete account not working → Continuous loading occurs after click yes on the confirmation popup(all apps). - fixed
+
+10. Laundry → Unable to import menu fileScreenshot
+
+already issue in the product
+
+
+
+Testing Team 
+October 10, 2023 at 6:19 PM
+
+Hi @Absin Bowsiya @Ajithkumar M 
+
+Reopen:
+
+OTP not sent for new user registration → Twilio flow not working
+
+Facebook login not working
+
+Delete account not working → Continuous loading occurs after click yes on the confirmation popup(all apps).
+
+Incorrect password validation for store while new store registration Screenshot 
+
+Unable to register a new provider (Refer to below video)
+
+Forgot password not working for provider (same as new provider register)
+
+Manual booking not working (Notification not received for provider) → Manual booked job not assigned to provider
+
+Schedule booking not working
+
+Instacart flow not working → Request not received for provider
+
+Laundry → Unable to import menu fileScreenshot 
+
+User and provider details not shown properly in store Screenshot 
+
+Taxi → Blank popup shown and location not fetched for user - Unable to check taxi flowScreenshot Screenshot
+
+
+
+URL should not have product name screenshot-nimbusweb.me-2023.10.12-10_09_33 - Nimbus Capture  (All page URL has product name)
+
+Category image is not displayed and Product name on feeds page Screenshot 
+
+Broken image on entire site Screenshot Screenshot Screenshot 
+
+Dispatcher and company tabs should not be displayed on admin login Screenshot 
+
+Need to remove company signup Screenshot 
+
+Uploaded profile picture shown as broken image Screenshot 
+
+Unwanted field on My orders page Screenshot 
+
+Deliveryall name shown after adding promo Screenshot 
+
+Need to remove seed user credentials autofetch on front end and admin panel Screenshot 
+
+Need to remove company login Screenshot 
+
+Need to remove unwanted fields on store signup Screenshot Screenshot 
+
+Image upload not working properly → broken image shown Screenshot 
+
+Unable to add menu item manually on store panel
+
+Active store not displayed on front end. Unable to check store and order related flows Screenshot Screenshot 
+
+Error page occurs while apple login Screenshot 
+
+Forgot password not working for store → Clicking on the link has no action
+
+Unwanted tile shown on admin panel dashboard Screenshot → If clicked unauthorized content page shown Screenshot 
+
+Unwanted columns and content on Manage provider Screenshot 
+
+Seed documents are not available Screenshot 
+
+Seed vehicle types are not available Screenshot 
+
+Delivery all name should not be displayed on add vehicle type Screenshot 
+
+Manage vehicle field is not available on Manage providers Screenshot 
+
+Unwanted management on admin panel → Kindly refer screenshots Screenshot Screenshot Screenshot 
+
+Seed location not available Screenshot 
+
+Heat map shows product name Screenshot 
+
+All seed data are not available (Location, vehicle, document and fare etc.,)
+
+Business type shown while adding fare Screenshot 
+
+Added location not fetched while adding fare Screenshot Screenshot → Unable to add fare
+
+Need to remove seed data on manage owe amount Screenshot 
+
+Need to remove business types and service type columns on entire site. Screenshot Screenshot 
+
+Need to remove company related fields on entire site Screenshot 
+
+
+Gender selection popup not came after register new user .
+
+Facebook login not working - Screenshot 
+
+Messages not update in chat page in both user and in driver app.
+
+sinch call not working in both user and in driver app.
+
+no of seats content shown in job details page  in user app for normal trip - Screenshot 
+
+uploaded profile picture not saved in user profile - Screenshot 
+
+Project name not change in users camera and gallery access popups - Screenshot Screenshot 
+
+Rating page not proper in driver app - Screenshot 

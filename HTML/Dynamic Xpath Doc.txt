@@ -1,0 +1,83 @@
+//button[@data-testid='date-display-field-start']
+
+//input[@placeholder='Where are you going?']
+
+
+1.//div[@class='featured-box']//*text()='Testing']  -plACEHOLDER LA TEXT irunta
+
+
+2.Dynamic xpath in selenium webdriver
+
+
+1.Username ku --- name prefer pannu
+
+2.//*[contains(@name,'btn')] --- Login Reset ku prefer pannu
+
+
+3.//*[contains(@id,'message')]--- username Password validation message prefer pannu
+
+
+4.//*[contains(text(),'here')] ,//*[contains(text(),'Tutorials Library')]  - Text irunta prefer pannu
+
+
+5.//input[@type='submit' or @name='btnReset'] --- 1st or 2nd condition true ku prefer pannu
+  1condition true a potum
+
+6.//input[@type='submit' and @name='btnLogin'] --- fails to find an element if one condition fails
+
+
+7.//td[text()='UserID'] --- text
+
+
+
+xpath axes methods                                                                     USER ID 
+                                                                                        PASSWORD
+                                                                                     
+                                                                                       LOGIN    RESET
+
+1.//input[@type='text'] --- user id na
+
+2.////input[@type='text']//following::input  --- User id +password 
+
+3.//*[@type='text']//following::input[1]  ---- User id +password 
+
+4.//*[@type='text']//following::input[2]  -- lOGIN
+
+5.//*[text()='Enterprise Testing']//ancestor::div --- ancestor element select all which means parents grandparents
+
+
+6.//*[@id='java_technologies']//child::li --- Select children elements of current node
+
+
+7.//*[@type='submit']//preceding::input  -- Identify all input elements before login that is username and password
+
+
+8.//*[@type='submit']//following-sibling::input --- sibiling same level of current node eg: login na Reset
+
+
+9.//*[@id='rt-feature']//parent::div
+
+
+10.//*[@type='password']//self::input --- Matches only one node
+
+
+11.//*[@id='rt-feature']//descendant::a ---child node grandchild node
+
+
+Xpath locator
+
+
+1.ID
+2.CLassName
+3.Name
+4.Link text
+5.Xpath
+6.Css path
+
+
+Absolute xpath:
+
+/ -- Direct way to find the element but if any changesmade in the path of element then 
+    Xpath gets failed
+
+//--- Relative--Starts middle Html Dom structure it is not a complete path from the root element

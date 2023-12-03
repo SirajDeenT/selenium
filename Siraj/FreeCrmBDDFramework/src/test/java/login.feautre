@@ -1,0 +1,19 @@
+Feautre: Booking application
+
+
+Scenario: Login should be sucess
+
+Given user should navigate to the application
+
+Given user click on the login link
+
+Given user enter the username as orto
+
+Given user enter the password as orto
+
+
+When User click the login button
+
+Then login should be sucess
+
+

@@ -1,0 +1,72 @@
+Checked scenarios:
+
+Add video via gallery ,camera with sound,Tag friends,delete account,inbox,change profile,like comment ,favourite,hashtag
+
+Apple signup not working
+
+Created data are not showing in the admin panel
+
+Unable to go to feeds page
+
+Remove broken images for footer
+
+Remove default credentials to user store and admin eg: Mobile number login
+
+Unable to create a menu in store
+
+Dashboard,payout details,Preparation time,Menu,offers,support ,Delete account 
+
+https://thirtymins.com/store/menu
+
+
+The broken image displayed for the trip option
+
+admin panel: Dashboard Manage Admin manage users manage providers manage stores manage category
+manage documents receipient management Manage review issue type Manage Help manage locations manage map
+heat map manage fare delete account reports
+
+map: unavailabe provider,Available provider,Unactivated provider ,Trip option
+
+multiple delivery flow,payout flow
+
+When tapping on the end trip button app crashes
+
+booking request not receives
+
+When back from the request page from the user side,the user sign outs from the app
+
+When entering without an insurance fee on the payment page,insurance fee is added
+
+Apple login button is not display
+
+
+Create account:
+
+First name last name number password city referral code
+
+servicelocal.trioangle.com/caretaxi/public/show_l-log - hit and get otp
+
+Enter ur vehicle information:
+
+Vehicle name
+Vehicle number
+Vehicle Type
+Continue
+
+Delete account:Make Sure all trips are completed payments are cleared
+
+register mail otp sende\
+
+
+host unlisted the room
+
+List the room first by login as Host
+
+and then approve from the admin
+
+
+
+
+
+
+

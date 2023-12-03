@@ -1,0 +1,7 @@
+Front-end developers focus on designing the physical appearance of websites with front-end programming languages. The visual aspect of a website is the result of front-end development — including fonts, colors, layout, and graphics.
+
+JavaScript, HTML, CSS
+
+Back-end developers create the structure or logic of a website by using server-side programming languages. They write code that tells the website how to bring the front-end programming languages alive.
+
+Python, Java, Ruby, PHP

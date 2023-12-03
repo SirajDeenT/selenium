@@ -1,0 +1,949 @@
+Database testing:
+
+Validate existence of values in database table
+
+
+Validate correctness of values in database table
+
+Validate completness of values in database table
+
+
+
+1.select *from customers where contactLastName 'king';
+
+2.select query used to fetch data from table
+
+3.select only few coloumns from table
+
+4.Select*from employees; - one query
+
+5.select *from orders; - one query 
+
+6.select firstName,email,jobtitle from employee;
+
+7.Where - filter
+
+8.Select * from employees where employeeNumber = 123;
+
+9.select * from employees where employeeNumber>=123;
+
+10.select *from customers where country 'usa' or country 'france' or country 'spain';
+
+11.select * from customers where country IN('USA','France');
+
+12.select * from employees where firstname 'A%';  percentage men any number of charc
+
+13.select * from customer where customerName like'%co';
+
+14.Delete (conditionality delete data from table not structure)
+
+15.Delete --- dml command
+
+16.Delete -- can be rever Rool back
+
+
+17.Truncate --- Delete data from table(not structure)
+
+18.Truncate - DDL command
+
+19.Truncate --- cannot roll back
+
+
+
+20.Drop ---- Delete data from table as well as Table structure
+
+21.Drop --- DDl command
+
+22.Cannot be rolled back
+
+
+create table customer1 as select*from customers; --- copy of this
+
+go to schema and refresh table is created
+
+
+select* from employees1;
+
+delete from employees1 where jobTitle'sales';
+
+delete --- table is there but no coloumn inside table
+
+
+
+
+
+Truncate:
+
+
+select* from customer1;
+truncate table customer1;
+
+
+
+database collection of data
+
+operate large amount of information by storing reviewing and managing
+
+Mysql,oracle,mongodb,sql server
+
+why: increase the use of view and stored procedures
+
+stored procedures and view contains critical tasks sy=uch as inserting customers details
+name contact information and sales data
+
+data come from multiple appp to check incorrect data is stored in db
+
+
+functional db -- blackbox testing and white box
+
+non functional db --- load stress performance of db
+
+
+
+1.Verifying name of db,enough space allocated for each database,database option setting
+
+2.,Find out schema triggers and stored procedure each group test
+
+3.Non functional --- insert a new menu item in front end window fill in the information
+                     and save record
+
+4.Non functional --- Delete
+
+
+
+
+
+
+----------------- **-------------------- JMETER
+
+
+
+Test plan ---- Name Bean shelll
+
+
+Thread group --- Testcase 1
+
+
+Edit HTTP Request 
+
+
+View results tree
+
+
+4.bean shell
+
+
+5.Add --- post processor ---- bean shell post processor
+
+
+6. script
+
+
+//ctx context class object ,this class exisat in jmeter api
+
+
+7.Fetch response code
+
+
+ctx.getPreviousResult(.getResponseCode());
+
+
+
+8.Fetching headers
+
+log.info(ctx.getPreviousResult().getResponseHeader());
+
+
+
+9.Fetching Response data
+
+
+ctx.getPreviousResult().getResponseDataString());
+
+
+
+------ Beanshell ASSertion ----
+
+
+
+1.Fetch content
+
+log.info(ctx.getPreviousResult().getContentType());
+
+
+2.Fetch Response body size in bytes
+
+log.info("Response Body Size :" +ctx.getPreviousResult().getBodySizeAsLong());
+
+3.getHeaderSize();;
+
+4.getThreadName();
+
+5.getStartTime() getEndTime() getTime()
+
+6.Fetch Url of request
+
+ ctx.getPreviousResult().getUrlAsString()
+
+getErrorCount();
+getLatency();
+
+
+7.Work on variables
+
+
+Testplan
+
+Add variable Name: URL
+
+Value: www.Testing.com
+
+Http request:
+
+Server name : $(URL)
+
+and run
+
+
+Fetch value of url by using beanshell
+
+
+Add preprocessor : before sending a request we use for fetch url
+
+
+
+Beanshell:
+
+//fetch value of utl
+log.info( "URL OF THE Request " + ctx.getVariables().get("URL));
+
+//change value of url
+
+ctx.getVariables().put("URL", WWW.Testing.com/hi");  --- updated value of url ,if does not exist in variable then create a request
+
+
+
+
+//remove variable
+
+
+ctx.getVariables().remove("URL");
+
+
+
+
+Test plan :
+
+
+Add thread groups
+
+100 users Ram up --- 100 seconds  --- in each second one user send request
+
+go to http request ---- Add --- preprocessor 
+
+
+bean shelll
+
+ctx.getThreadGroup().getNumberOfThread()
+
+Runing forever (loop)
+
+
+
+
+
+
+
+
+jmeter : open source of software performance testing
+
+
+load,stress,volume ,spike endurance java based app 
+
+
+
+
+2.support http https smtp soap rest
+
+
+3.record and perform
+
+4.lot of reports : listeners : generate diffrent type of report
+
+
+5.lot of plugins: integrate 
+
+
+6.Test plan --- define some variable ,how to execute each test plan consists multiple thread group
+
+
+5.Thread group --- define test case  multiple steps Name, how many users, each thread group contains n number of users send n request to users
+
+
+6.Types of test: elements
+
+samplers: send request to server supports HTTP FTP JDBC SMTP REST API
+
+
+
+inside thread group add --- samplers --- Http request
+
+
+protocol: http  Servername or ip : www.hello.com
+
+
+Execute and save
+
+
+7.Listener --- used to display results
+
+lot of options : view results aggregate
+
+
+8.Listeners --- display request you send it to server and also display response
+
+
+9.Assertion --- used to apply vaslidation of response which is coming from server
+
+
+10.Thread group --- add assertion json,size,xpath,duration,compare,html,beanshell,response
+
+
+11.duration --- 100 milliseconds
+
+
+12.Timers : Apply some delay.
+
+
+13.Thread group --- ADD constant timer
+
+
+14.Controller : controll execution 
+
+----------
+
+
+Diff types of test steps
+
+
+config element (before test case) preprocessor (just before sampler) postprocessor(just got after response )
+
+
+Thread group : add config element csv data
+
+--------
+
+
+Record in jmeter
+
+
+
+Testplan --- Thread group ---- Add logic controller --- recording controller
+
+
+Testplan --- non test element --- test script recorder
+
+
+
+firefox browser --- advanced --- network setting --- connection --
+
+
+
+
+
+Execution flow of diffrent elements:
+
+
+
+Config elements
+
+pre proc essor
+
+Timer
+
+samplers
+
+post processor
+
+Asserions
+
+listeners
+
+
+
+
+
+
+
+First test case in jmeter:
+
+
+
+G o to www.yahoo.com
+
+Navigate to diff page like scenario,regioster,login admin
+
+validate all pages should not take more than 500 sec
+
+and wait of 3 sec between each request
+
+display result
+
+
+steps:
+
+
+Thread group : Name : sample add 5 test case
+
+thread : 5
+
+add http request: server name : www.hello.com/register --- register url
+
+
+
+ADD assertion : duration assertion : 500 milli second
+
+
+Add timer : 3000 milli seconds 
+
+
+ADD child of sampler as timer
+
+
+
+timer priority more than sampler
+
+save it and execute
+
+
+------- Record using Blazemeterplugin 
+
+
+
+1.Record jmeter scripts
+
+
+2.www.yahoo.com
+
+3.press the record button
+
+4.start the action
+
+5.stop it 
+
+6.change name of script : test worls_hi
+
+7.Login 
+
+8.download record
+
+9.submit
+
+10.jmeter ---open --- download -- jmx
+
+
+11.recorded steps are display under Thread group
+
+
+12.Execute and get response from listeners
+
+
+
+
+
+---------
+
+Test search with valid item name   - Testcase name
+
+Test search with invalid item name
+
+search with blank data
+
+search with special characters 
+
+search with part of item name
+
+
+Testcase :
+      Build
+
+Running test case Expected vs client requeriments
+
+Test login with correct username and password
+
+
+
+caps''
+
+
+
+---------- postman ----
+
+
+Testing --- API
+
+unit testing of api
+
+diff types of http request - get post putch [atch delete
+
+possible to add headers in request
+
+
+Postman window:
+
+Add multiple tabs
+
+Authorization: credentials Of API
+
+
+Basic : username and password,oauth -- related to tokens
+
+header : key value 
+
+body : post and put
+
+pre requisite script : before send request to script
+
+Test: after receiving response from the server it will execute
+
+
+
+bottom get --- response
+
+
+collection: group of request 
+
+
+Environment : QA DEV UAT Production
+
+
+Manage environment : QA
+
+
+
+GLOBAL variable : any data you want too use multiple request define it as global
+
+End to end test case:
+
+1.create a new record
+
+2.verify record data
+
+3.update record
+verified updated data
+4.delete data
+5.verified data is deleted sucessfully
+
+
+
+1.method : post  -201 created status display on botton - adding a new record
+
+we need to send body json raw 
+
+format : {
+           "id" :11,
+          "title" : "Testing world",
+           }
+
+
+2.Get request :
+
+once we get request 
+
+verify status code in tests tab
+
+tests["Status code - Get Request"]=responseCode.code ==200;
+
+tests["Body matches string"]= responseBody.has("Testing world"]
+
+
+
+3.UPdate means PUT 200 ok
+
+We need to send body 
+
+format: {
+         "id" :11,
+          "title" : "Testing world update",
+           }
+
+4.Delete 200 ok
+
+5.And making get request again : 404 not found
+
+6.Bottom display : Test result as pass
+
+7.fetch request content
+
+Tests tab
+
+console.log(request.data)
+
+console.log(request.url)
+
+console.log(request.method)
+
+
+
+8.Environment:
+
+
+today qa tomorrow uat
+
+Executing automation
+
+Environmenty option --- add environment --- name --- QA
+
+Fill : Url : http://localhost/300 key : url : value
+      Username : testing password : hi
+
+
+9.{{url}}/posts/11
+
+10.Global : can be used in diffrent environment
+
+    all request credentials is same
+
+
+11.Manage environment --- Global
+
+key: Resorce value : posts save it
+
+
+{{url}}/{{resouce}}/
+
+12.Environment by coding :
+
+
+
+prerequest script:
+
+
+postman.setEnvironmentVariable("My id" , "TestValue") - key value
+
+console.log(postman.getEnvironmentVariable("url"))
+
+postmant.clearEnvironmentVariable("username")
+
+
+
+
+
+Execute test case with multiple test data placed in csv file(json file)
+
+
+
+
+
+Rest api (manual testing)
+
+
+
+use employye management
+
+
+Add a post request - Add employess to the system
+
+Make a get request --- To fetch dats of employee added in previous step
+
+Make a put request --- Update employee data
+
+Again Make a get request --- To validate puut worked correctly or not
+
+Make a delete request : To delete employee data
+
+Again make Get request : To validate delete worked correctly or not
+
+
+Add basic validations on response
+
+
+Validate status code
+
+Validate Response time
+
+Validate Data in response body Time size
+
+Validate Status code string eg : status : 201 Created (string)
+
+Validate Header exists in response eg :date use snippet validate
+
+
+
+when we are making piut request it always send mandatory to send ID 
+
+
+
+
+we can also send data in the headers so that is our request header 
+
+keys and values
+
+
+
+
+bottom get: response header : server expires date content length
+
+
+
+
+collection: container to save request
+           multiple request together later execution
+
+
+
+New collection : Api testing name
+
+save as in this collection
+
+give the name
+
+
+it is not good approach
+
+
+
+collection --- three folder
+
+
+add folder
+
+
+
+
+
+------- JIRA ----
+
+
+
+Search iten functionality is working partial data as well --- summary
+
+
+
+Description:
+
+on homepage ,entered partial mobile name ,as we click on search button we are getting items in Result but 
+as expected it should not display
+
+Steps to reproduce:
+1.Go to home page
+
+2.in search text box enter"ipho"
+
+3.Click on search button
+
+
+Expected: Should not get any search result
+
+Actual: We are getting search result
+
+priority : highest
+
+Environment : Getting issue in firefox environment
+
+Attachment 
+
+
+
+----------
+
+Steps: 1.go to login page 2.Enter username 3.Enter password 4.click on sign in button
+
+Data: Give Admin username Give Asmin password
+
+EXpected result : LOgin page should open User should be logged in sucessfully
+
+
+we should get following welcome message "welcome username"
+
+Test case Description : Verify login by Admin user with valid credentials
+
+--------
+
+
+
+
+Soap
+
+
+simple object acess protovcol
+
+used to message exchange between service andd application in xml format
+
+wsdl is document in xml which describe webservice the location and operations
+
+wsdl written in simple xml
+
+
+wsdl having major elements
+
+<types> <message><prototype> <binding>
+
+
+http://webservicex.com/globalweather.asmx?WSDL
+
+
+
+Rest services:
+
+
+use http or othr GET POST PUT DELETE
+
+Rest is set of guideliness which described client should interact with serveer
+
+
+Each resource asccess using unique uri
+
+A response fornat html xml plantext jsoin pdf html
+
+
+
+soap : project testsuite testcase step
+
+
+
+project name: wsdl set path : weather ok
+
+
+
+New testcase : Smoke TestSuite
+
+
+  Testcase 1
+
+
+GET Countries  ok 
+
+Step 1
+
+
+getting data in result xml 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+WE sdidnt update test case correctly --- so 400 error occur in put request
+\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

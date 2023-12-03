@@ -1,0 +1,215 @@
+Verify that Api response status code is 200
+
+Verify that Api response in the expected format
+
+Api response contains all expected fields
+
+Api response time
+
+Api request parameters correctly passes to api
+
+Api returns an error message if the request is malformed,authentication fails
+
+Api returns an error message if request payload is missing
+
+if requested resource does not exisit
+
+not authorized
+
+request payload with invalid data
+
+resource created'
+resourxe updated
+resource deleted
+
+
+
+
+
+
+Sql:
+
+
+Unique values: SELECT DISTINCT department FROM Worker table;
+
+SELECT *FROM worker ORDER BY First_name;
+
+department name start with admin
+
+SELECT *FRIM worker WHERE departmebt LIKE 'Admin./.';
+
+sql execute queries against database
+retreive data from db
+insert records in db
+update records in db
+delete records in db
+
+DDL:
+
+CREATE DROP ALTER
+
+
+DML:
+
+CREATE READ UPDATE DELETE
+ Delete data from database
+
+sql server: development
+
+Your database : School
+
+Your query : New query
+
+
+
+select *from SCHOOL
+
+
+New table
+
+add coloumns datatype
+
+Customer id -- int
+
+Customer number -- int
+LatName - varchar(50)
+FirstName - varchar(50)
+Areacode - int         -- Allow null
+Address - varchar(50)  --- Allow Null
+Phone - varchar(50)    ---- Allow Null
+
+
+SQl constraints
+
+specified when table is created with CREATE TABLE Statment alter the table
+
+Primary key foreign key not null unique check default identity
+
+
+
+Primary key:
+
+Uniquely identify each record in database table
+
+pRIMary key contains unique values
+
+Easily set primary key:
+
+right click select set primary key
+
+
+Foreign key:
+
+table points to primary key in another table
+
+Relationship -- add -- tables and coloumns
+
+A primary key coloumn cannot contains Null values
+
+
+
+
+
+
+
+
+
+
+correct pagination
+Api handles partioal updates and return cortrect http status code
+
+various type of request api handles such as get post put delete head patch
+
+request not supported(405)
+Api returns correct http status code for invalid request(400 bad request)
+unauthorized request(401)
+forbidden request(403)
+resource not found(404)
+server side validation
+
+encryption decryption data
+cross origin resource sharing(cors)
+
+
+put:
+
+update details parially
+
+body:
+
+raw
+
+{
+
+"name : "siraj"'
+"dob": "17",
+
+}
+
+uri:
+
+https://localhost:8080/mystoreapp/customers
+
+update customers in request body
+
+send customer id along with other attributews
+
+send this request to server
+
+response code 200
+
+doesnt exist create
+
+as well as update existing resource
+
+psth parameter
+
+in body going to send the request
+
+exisited earlier in database will be removed because new put request sent empty
+
+completely replaces what is present on theback end -- put
+
+
+error --- 404 wrong path parameter
+
+if you send something wrong in the request data 
+
+body
+
+payload
+
+la --- "email": 1234, -- which is invalid liker empty phone number or string for phone number
+
+                       or invalid email  id -- 400 bad request
+
+patch:
+
+
+post: whole body of resource is replaced by whatever attributes are sent into put request
+
+you just want to modify one or two attributes use patch
+
+
+
+eg: city of customer use same uri using input
+you will  send methd patch
+
+send the changes to the resource
+
+
+format:
+
+"id" : 11,
+"username" : "Test1",
+"email" : "abc@gmail.com",
+
+"phonenumber" : "8776667"
+
+
+
+formdata -- key value
+
+raw -- curly bracket
+
+

@@ -1,0 +1,95 @@
+primitive -- string integer /number boolean undefined null
+
+reference type --- object array function
+
+let firstName ="Anbu 17";//string
+
+let age = 24;//integer
+
+let isYoung = true//Boolean
+
+let laStName = undefined
+
+let trophy = null
+
+//object
+
+let person ={
+         name:"siraj",
+         age:22,
+         gender:"male",
+              sibiling: {
+                     brother:"raj"
+}//object
+
+//Dot Notation
+
+console.log(person.age)
+
+//bracket notation
+console.log(person['gender'])
+
+console.log(person)
+
+
+//conditional
+
+let weather = hot;
+if(weather=="hot"){
+    console.log("weather is hot!");
+}
+else{
+   console.log("weather is cold");   - o/p weather is cold
+
+
+}
+
+let isRaining = false;
+
+let isCloudy = true;
+
+
+if(isRaining ii is cloudy)
+
+{
+ console.log("Dont forget to take umberlla");
+} else{
+
+   console.log("Sky is normal enjoy weather);
+}
+
+0/p 1 --- dont forget
+
+
+
+
+
+
+// if hour is between 12AM TO 1PM ---- Good morning
+
+//Else if hour is between 1PM to 5PM --- good afternnon''
+
+//Else hour is between 5pm to 12Am --- good evening
+
+
+let hour = 14;
+
+if(houur>=0&&hour<=13)
+     console.log("Good morning");
+
+elseif(hour>=13&&hour<=17)
+  console.log("Good afr=ternoon");
+
+
+
+
+let hour = new Date();
+
+console.log(hour);
+
+
+
+
+
+
+
